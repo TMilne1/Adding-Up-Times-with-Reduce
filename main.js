@@ -1,4 +1,4 @@
-console.log('hello')
+
 
 // completed prior to looking at video and without using reduce
 
@@ -38,10 +38,10 @@ const totalTimeInSeconds = timeArray.map(item=>{
 },0)
 let x = totalTimeInSeconds
 
-const hours2 = Math.floor(timeInSeconds/3600);
+const hours2 = Math.floor(x/3600);
 x = x - hours2 * 3600
 const mins2 = Math.floor(x / 60);
-x = x - mins*60
+x = x - mins2*60
 const secs2 = x
 
 console.log(hours2, mins2, secs2)
